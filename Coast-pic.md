@@ -1,1 +1,1 @@
-<img id="coast-pic" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/MalibuAir.jpg">
+
