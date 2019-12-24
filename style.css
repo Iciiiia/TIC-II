@@ -1,1 +1,66 @@
-
+ h1{color: rgb(235, 12, 235); }
+        h2{color: rgb(240, 168, 240);}
+        h3{color: rgb(240, 168, 240);}
+        ol{background-color: rgb(176, 235, 237);
+            font-family: sans-serif;}
+        h5{background-color: rgb(214, 208, 207);}
+        h5{color:rgb(38, 0, 255);}
+        .Malibu{color:gray;}
+        h6{color: rgb(9, 10, 1);}
+        h6{background-color: rgb(240, 206, 240);}
+        p{background-color: rgb(174, 240, 170);}
+        #nameautora{
+            float: right;
+        }
+        #condiciones{
+            font-family: monospace;
+            color: rgb(5, 55, 237);
+        }
+        #coast-pic {
+            width: 220px;
+            float: right;
+            border:5px double rgb(237, 33, 237);
+            margin-left:20px;
+        }
+        #zuma-beach{
+            width: 251px;
+            float: left;
+            margin-right:6px ;
+        }
+        #beach-party{
+            width: 400px;
+            float: middle;
+            border:6px solid rgb(242, 17, 47);
+           
+    
+        }
+        #billetes{
+            background-color: rgb(255, 255, 255);
+            color: rgb(87, 63, 87);
+            font-family: cursive;
+        }
+        #iberia{
+            background-color: rgb(255, 255, 255);
+            font-family: cursive;
+        }
+        #table{
+            border:10px double rgb(5, 3, 5);
+        }    
+       #Hoteles{
+           color: rgb(19, 113, 207);
+           background-color: rgb(184, 230, 215);
+       }
+       #info-hoteles{
+           background: rgb(214, 175, 214);
+       }
+      #hopper {
+            position: absolute;
+            right: 14px;
+        } 
+            #creature {position:absolute;
+                left:2px;
+                z-index: 2;}
+            #planet { width: 90px;
+                top:107px;
+            }    
+	
