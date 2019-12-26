@@ -1,38 +1,20 @@
-// Image switcher code
+var miBoton = document.querySelector('button');
+var miTitulo = document.querySelector( 'h1');
 
-let myImage = document.querySelector('img');
-
-myImage.onclick = function() {
-  let mySrc = myImage.getAttribute('src');
-  if(mySrc === 'images/firefox-icon.png') {
-    myImage.setAttribute ('src','images/firefox2.png');
-  } else {
-    myImage.setAttribute ('src','images/firefox-icon.png');
-  }
+function estableceNombreUsuario() {
+    var miNombre = prompt('Por favor, ingresa tu nombre.');
+    localStorage.setItem('nombre', miNombre);
+    miTitulo.textContent = 'Mozilla es fresco,' + miNombre;
 }
 
-// Personalized welcome message code
-
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-
-function setUserName() {
-  let myName = prompt('Please enter your name.');
-  if(!myName || myName === null) {
-    setUserName();
-  } else {
-    localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
-  }
+if (!localStorage.getItem('nombre')) {
+    estableceNombreUsuario();
+}
+else {
+    var nombreAlmacenado = localStorage.getItem('nombre');
+    miTitulo.textContent = 'Mozilla es fresco,' + nombreAlmacenado;
 }
 
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
-}
-
-myButton.onclick = function() {
-  setUserName();
+miBoton.onclick = function() {
+    estableceNombreUsuario();
 }
