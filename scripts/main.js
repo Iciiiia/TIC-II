@@ -1,11 +1,11 @@
 var miImage = document.querySelector('img');
 
 miImage.onclick = function () {
-    var miSrc = miImage.getAttribute('src');
+    var miSrc = miImage.getAttribute("https://cdn.pixabay.com/photo/2018/03/03/08/08/sunset-3195123_960_720.jpg");
     if (miSrc === 'images/firefox-icon.png') {
       miImage.setAttribute('src','images/beach-party.png');
     } else {
-      miImage.setAttribute('src', 'images/sunset-icon.png');
+      miImage.setAttribute("https://cdn.pixabay.com/photo/2018/03/03/08/08/sunset-3195123_960_720.jpg", 'images/sunset-icon.png');
     }
 }
 var miBoton = document.querySelector('button');
