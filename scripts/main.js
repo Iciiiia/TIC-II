@@ -1,2 +1,2 @@
 var miTitulo = document.querySelector('h1');
-miTitulo.innerHTML = 'Hello world!';
+miTitulo.innerHTML = 'Travel to Malibu!';
