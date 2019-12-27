@@ -5,7 +5,7 @@ myImage.onclick = function() {
   if(mySrc === 'images/sunset-icon2.jpg') {
     myImage.setAttribute ('src','images/sunset-1046475_640.jpg');
   } else {
-    myImage.setAttribute ('src','images/sunset-icon2.jpg');
+    myImage.setAttribute ('src','images/MalibuAir.jpg');
   }
 }
 
