@@ -1,25 +1,36 @@
-var miImage = document.querySelector('img');
+let myImage = document.querySelector('img');
 
-miImage.onclick = function () {
-    var miSrc = miImage.getAttribute('src');
-    if (miSrc === 'images/sunset-icon2.jpg') {
-      miImage.setAttribute('src','images/sunset-1046475_640.jpg');}
-    else {miImage.setAttribute('src', 'images/sunset-icon2.jpg');}
+myImage.onclick = function() {
+  let mySrc = myImage.getAttribute('src');
+  if(mySrc === 'images/sunset-icon2.jpg') {
+    myImage.setAttribute ('src','images/sunset-1046475_640.jpg');
+  } else {
+    myImage.setAttribute ('src','images/sunset-icon2.jpg');
+  }
 }
 
-var miBoton = document.querySelector('button');
-var miTitulo = document.querySelector( 'h1');
-function estableceNombreUsuario() {
-    var miNombre = prompt('Por favor, ingresa tu nombre.');
-    localStorage.setItem('nombre', miNombre);
-    miTitulo.textContent = 'Travel to Malibu,' + miNombre;
+// Personalized welcome message code
+
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+
+function setUserName() {
+  let myName = prompt('Please enter your name.');
+  if(!myName || myName === null) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.innerHTML = 'Travel to Malibu ' + myName;
+  }
 }
-if (!localStorage.getItem('nombre')) {
-    estableceNombreUsuario();
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'Travel to Malibu ' + storedName;
 }
-else {
-    var nombreAlmacenado = localStorage.getItem('nombre');
-    miTitulo.textContent = 'Travel to Malibu,' + nombreAlmacenado;
+
+myButton.onclick = function() {
+  setUserName();
 }
-miBoton.onclick = function() 
-{estableceNombreUsuario();}
