@@ -2,7 +2,7 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
-  if(mySrc === 'images/sunset-icon2.jpg') {
+  if(mySrc === 'images/MalibuAir.jpg') {
     myImage.setAttribute ('src','images/sunset-1046475_640.jpg');
   } else {
     myImage.setAttribute ('src','images/MalibuAir.jpg');
